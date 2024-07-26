@@ -1,0 +1,20 @@
+.footer {
+    background-color:black;
+    align-items: center;
+    box-shadow: 3px 3px 3px white;
+    padding: 20px; 
+  }
+
+  .nav-link:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out; 
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.6); /* Yellow shadow */
+  }
+
+  .footer-icon {
+    width: 50px; /* Set width to 10px */
+    height: 50px; /* Set height to 10px */
+    /* Optionally, you can set other styles like margin or padding if needed */
+  }
+  
+  

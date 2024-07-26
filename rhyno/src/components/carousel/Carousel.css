@@ -1,0 +1,44 @@
+/* Carousel.css */
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-item {
+    flex: 1 0 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .carousel h2 {
+    color: #fffbfb;
+    margin-bottom: 10px;
+  }
+  
+  .carousel p {
+    color: #f8f7f7;
+    line-height: 1.6;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .carousel {
+    animation: slide 30s linear infinite;
+  }
+  

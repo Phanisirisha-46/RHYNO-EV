@@ -1,0 +1,56 @@
+/* Header.css */
+
+.header {
+  background-color: black; /* Default color */
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  
+  padding: 20px;
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Position it at the top */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.header.scrolled {
+  background-color: #d6d4d4; /* Color after scrolling */
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.header h1 {
+  color: var(--dark-pink);
+}
+
+.logo-icon {
+  width: 300px; /* Set width to 300px */
+  height: 100px;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.nav-link {
+  color: rgb(249, 243, 243); /* Set default link color to black */
+  text-decoration: none; /* Remove underline */
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.6); /* Yellow shadow */
+}
+
+/* Change link color to black when scrolling */
+.header.scrolled .nav-link {
+  color: black; /* Change color to black when scrolled */
+}
