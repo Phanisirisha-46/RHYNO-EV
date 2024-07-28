@@ -1,5 +1,9 @@
 /* Home.css */
-
+  /* Cart.css */
+  body {
+    font-family: 'Lato', sans-serif; /* Ensure Lato is imported in your project */
+  }
+  
 .gallery-container {
     display: flex;
     justify-content: center;
@@ -25,7 +29,7 @@
     top: 0;
     left: 100%; /* Start with images off-screen to the right */
     opacity: 0;
-    animation: fadeSlide 30s infinite;
+    animation: fadeSlide 17s infinite;
     transition: opacity 1s ease-in-out; /* Smooth fade transition */
   }
   
@@ -38,6 +42,198 @@
   }
   
   .gallery img:nth-child(1) { animation-delay: 0s; }
-  .gallery img:nth-child(2) { animation-delay: 15s; }
-  .gallery img:nth-child(3) { animation-delay: 25s; }
+  .gallery img:nth-child(2) { animation-delay: 8s; }
+  .gallery img:nth-child(3) { animation-delay: 15s; }
+
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; /* Adjusted to cover full viewport height */
+  background-color: rgb(11, 11, 11); /* Background color of the entire container */
+  box-shadow: 5px 4px 8px rgb(243, 241, 241); 
+}
+
+.cart-content {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: white; /* White background for the card */
+  box-shadow: 5px 4px 8px rgb(243, 241, 241); /* Optional shadow for better appearance */
+  animation: fadeIn 2s ease-in-out, backgroundAnimation 4s infinite alternate; /* Added background animation */
+}
+
+.cart-header {
+  color: black; /* Text color */
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #898787; /* Light grey */
+  }
+  100% {
+    background-color: #f9f9f9; /* Slightly darker grey */
+  }
+}
+
+.rotating-word {
+  color: black; /* Color for the rotating word */
+  font-weight: bold; /* Optional: Makes the rotating word bold */
+}
+
+/* ProductCard.css */
+.card-product {
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 5px 4px 8px rgb(236, 234, 116);
+}
+ .rhyno{
+  width: 300px;
+ height: 385px;
   
+}
+.special{
+  padding-top: 50px;
+}
+.image-container .main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.title-container .title {
+  font-size: 18px;
+  margin-top: 10px;
+  color: black;
+}
+
+.price-container .warranty {
+  font-size: 14px;
+  color: green;
+  margin: 10px 0;
+}
+
+.button-container .checkout-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button-container .checkout-button:hover {
+  background-color: #0056b3;
+}
+
+.link-container .learn-more {
+  display: block;
+  margin-top: 15px;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.link-container .learn-more:hover {
+  text-decoration: underline;
+}
+
+
+.carousel-container {
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.card-product {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px; /* Adjust this value to control the space between cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+}
+
+.image-container {
+  margin-bottom: 16px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+.title-container {
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price-container {
+  margin-bottom: 16px;
+}
+
+.warranty {
+  font-size: 14px;
+}
+
+.button-container {
+  margin-bottom: 16px;
+}
+
+.checkout-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkout-button:hover {
+  background-color: #555;
+}
+
+.link-container {
+  margin-top: 16px;
+}
+
+.learn-more {
+  color: #000;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+.slick-slide {
+  padding: 0 10px; /* Add padding to the slick slides to create space between cards */
+}
+
+.slick-list {
+  margin: 0 -10px; /* Adjust margin to align the slides properly */
+}
+

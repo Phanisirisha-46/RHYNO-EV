@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   
-  padding: 20px;
+  padding: 1px;
   position: fixed; /* Make the header fixed */
   top: 0; /* Position it at the top */
   width: 100%; /* Full width */
@@ -16,12 +16,13 @@
 
 .header.scrolled {
   background-color: #d6d4d4; /* Color after scrolling */
+  color: black; 
 }
 
 .nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 10px;
 }
 
 .header h1 {
@@ -30,13 +31,13 @@
 
 .logo-icon {
   width: 300px; /* Set width to 300px */
-  height: 100px;
+  height: 70px;
 }
 
 .logo {
   display: flex;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 20px;
 }
 
 .nav-link {
@@ -50,7 +51,3 @@
   box-shadow: 0 4px 8px rgba(255, 215, 0, 0.6); /* Yellow shadow */
 }
 
-/* Change link color to black when scrolling */
-.header.scrolled .nav-link {
-  color: black; /* Change color to black when scrolled */
-}

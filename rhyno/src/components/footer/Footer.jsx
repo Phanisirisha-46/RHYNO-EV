@@ -6,20 +6,22 @@ import LinkedinIcon from '../../assets/linkedin.png'; // Adjusted path
 
 function Footer() {
   return (
+    
     <div className='d-flex flex-wrap justify-content-around footer'>
       <div>
+       
         <ul className='nav fs-5 p-3'>
           <li>
-            <Link to="" className='nav-link text-white'>Contact us</Link>
+            <Link to="contact" className='nav-link text-white'>Contact us</Link>
           </li>
           <li>
-            <Link to="" className='nav-link text-white'>Privacy policy</Link>
+            <Link to="https://rhyno.in/" className='nav-link text-white'>Privacy policy</Link>
           </li>
           <li>
-            <Link to="" className='nav-link text-white'>Refund policy</Link>
+            <Link to="https://rhyno.in/" className='nav-link text-white'>Refund policy</Link>
           </li>
           <li>
-            <Link to="" className='nav-link text-white'>Website policy</Link>
+            <Link to="https://rhyno.in/" className='nav-link text-white'>Website policy</Link>
           </li>
         
         </ul>
@@ -27,20 +29,20 @@ function Footer() {
       <div>
         <ul className='nav fs-5 p-3'>
         <li>
-            <Link to="" className='nav-link text-white'>Products</Link>
+            <Link to="/home" className='nav-link text-white'>Products</Link>
           </li>
           <li>
-            <Link to="" className='nav-link text-white'>Career</Link>
+            <Link to="https://www.linkedin.com/company/rhyno-wheels/" className='nav-link text-white'>Career</Link>
           </li>
           <li>
             <Link to="" className='nav-link text-white'>Rentals</Link>
           </li>
           <li>
-            <Link to="" className='nav-link'>
+            <Link to="https://www.instagram.com/rhyno.in?igsh=MXFwb2VkcnN1bWlhNw%3D%3D" className='nav-link'>
               <img src={instagramIcon} alt="Instagram" className='footer-icon' />
             </Link>
           </li>
-          <Link to="" className='nav-link'>
+          <Link to="https://www.linkedin.com/company/rhyno-wheels/" className='nav-link'>
               <img src={LinkedinIcon} alt="Linkedin" className='footer-icon' />
             </Link>
         </ul>

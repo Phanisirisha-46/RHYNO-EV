@@ -1,0 +1,57 @@
+
+.card-product {
+    background-color: white;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 5px 4px 8px rgb(236, 234, 116);
+    
+  }
+  
+  .image-container {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .title-container {
+    font-size: 18px;
+    margin-top: 10px;
+    color: black;
+  }
+  
+  .link-container {
+    display: block;
+    margin-top: 15px;
+  }
+  
+  .link-container a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .link-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: black;
+  }
+  
+  .contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+ 

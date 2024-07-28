@@ -1,19 +1,36 @@
 import React from 'react'
 import './Aboutus.css'
+import rhyno_logo from '../../assets/rhyno_logo.png'; // Adjusted path
 
 function Aboutus() {
   return (
     <div>
-      <p className="lead">
-        <br />
-      Imagine stepping into a bustling shopping mall, where the air is filled with a symphony of chatter, laughter, and the faint scent of freshly brewed coffee. The entrance welcomes you with expansive glass doors that lead into a spacious atrium, adorned with vibrant banners and digital screens announcing the latest sales and events. The ceiling, a lofty expanse of skylights and modern lighting fixtures, bathes the scene in a soft, ambient glow.
+       
+      <div className="image-container">
+          <img src={rhyno_logo} alt="Product" className="main-image" />
+        </div>
+        <h1 >ABOUT US</h1>
+     <p className='lead'><b>
+     Established in 2019 by an automotive engineer with a vision for sustainable and robust
+mobility solutions, Rhyno EV is not just a company; it's a collective effort of a dynamic team
+of young individuals passionately driving innovation in the electric vehicle industry. We
+believe in engineering solutions that solve problems.
+     </b>
 
-As you wander deeper into the mall, you're surrounded by a myriad of shops and boutiques, each offering its own unique array of goods. Fashion outlets beckon with the latest trends in window displays that change with the seasons, while electronics stores showcase cutting-edge gadgets and devices that dazzle with their sleek designs. The hum of activity is punctuated by the occasional sound of a cash register and the rustle of shopping bags as patrons eagerly explore the offerings.
-
-The scent of freshly baked goods wafts from the food court, where a diverse selection of eateries tempts with everything from gourmet burgers to exotic cuisines. Families gather at tables, sharing meals and conversation amidst the lively atmosphere. The sound of sizzling pans and the clinking of cutlery mingle with the joyful laughter of children and the background music playing softly overhead, creating a warm and inviting ambiance.
-
-For those seeking relaxation, the mall offers more than just shopping and dining. Secluded corners with comfortable seating provide quiet retreats for tired shoppers, while vibrant play areas and entertainment zones cater to younger visitors, offering arcade games, mini-golf, or even a small carousel to keep them entertained. Whether you're on a solo mission for the perfect outfit or enjoying a day out with loved ones, the shopping mall is a vibrant hub where commerce and community come together in a celebration of diversity and leisure.
-      </p>
+</p>
+<br />
+     <p className='lead'><b>
+     With our first product, we've taken a bold step to create something more than just a vehicle;
+it's a unique experience of elegance, comfort and style, addressing the pitfalls of
+conventional electric scooters. Our design prioritizes safety, eliminating concerns of fires and
+ensuring a longer battery lifespan with our battery technology. Perfectly suited for fleet
+operators, especially in tourist-centric locations like Goa, our rugged yet aesthetically
+appealing scooters are engineered for longevity and reliability. Join us as we pioneer a new
+era in sustainable and dependable electric transportation.
+     </b>
+    
+     </p>
+    
     </div>
   )
 }
