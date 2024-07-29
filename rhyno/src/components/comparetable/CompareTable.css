@@ -1,0 +1,173 @@
+/* This Snippet Created By: Osama Bakri */
+
+.p-70 {
+    padding: 10rem 1.2rem;
+    
+  }
+  .section-head {
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  .container{
+    height: 100%;
+    margin: 5rem 0;
+    background-color: var(--black);
+    color: var(--white);
+  }
+  
+  .section-head h2 {  
+    text-transform: capitalize;
+    font-size: var(--medium);
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+  
+  .section-head p {
+    font-size: var(--para);
+    font-weight: 400;
+    line-height: 1.4;  
+    margin-bottom: 0;
+  }
+  .compare .c-table table {
+    border: none;
+  }
+  /* H Table */
+  .compare .h-table {
+    position: sticky;
+    top: 0px;
+    background-color: var(--black);
+  }
+  /* Table Head */
+  .compare .c-table thead tr th {
+    width: 35%;
+    text-align: left;
+    border: none;
+  }
+  .compare .c-table .h-table thead tr td {
+    border-top: 1px solid var(--light-grey);
+  }
+  .compare .c-table thead tr td:last-child {
+    border-right: 1px solid var(--light-grey);
+  }
+  .compare .c-table thead tr td {
+    width: 16.25%;
+    font-weight: bold;
+    font-size: var(--para);
+    color: var(--white);
+    border: none;
+    border-left: 1px solid var(--light-grey);
+  }
+  .compare .c-table th,
+  .compare .c-table td {
+    padding: 25px;
+    vertical-align: middle;
+    text-align: center;
+    color: var(--white);
+  }
+  .compare .c-table td i {
+    font-size: var(--para);
+    color: var(--yellow);
+  }
+  /* Table Body */
+  .compare .c-table tbody tr th {
+    text-align: left;
+    border-left: none;
+    font-size: var(--para);
+    color: var(--white);
+    border-color: var(--light-grey);
+  }
+  .compare .c-table tbody tr td {
+    border-right: none;
+    font-size: var(--para);
+    color: var(--white);
+    border-color: var(--light-grey);
+  }
+  .compare .c-table tbody tr td:last-child {
+    border-right: 1px solid var(--light-grey);
+  }
+
+/* Add these media queries to adjust styling for tablet and mobile screens */
+
+/* For tablets */
+@media only screen and (max-width: 768px) {
+  .section-head h2 {
+    font-size: 24px; /* Adjust font size for section heading */
+  }
+  .compare .c-table thead tr th,
+  .compare .c-table thead tr td {
+    font-size: 14px; /* Adjust font size for table header and data cells */
+  }
+  .compare .c-table th,
+  .compare .c-table td {
+    padding: 15px; /* Adjust padding for table cells */
+  }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 480px) {
+  
+  .section-head h2 {
+    font-size: 20px; /* Further reduce font size for smaller screens */
+  }
+  .compare .c-table thead tr th,
+  .compare .c-table thead tr td {
+    font-size: 12px; /* Further reduce font size for smaller screens */
+  }
+  .compare .c-table th,
+  .compare .c-table td {
+    padding: 10px; /* Further reduce padding for smaller screens */
+  }
+
+  /* Hide table headers on mobile */
+  .compare .c-table thead {
+    display: none;
+  }
+
+  /* Display table rows as blocks */
+  .compare .c-table tbody tr {
+    display: block;
+    border: 2px solid var(--light-grey);
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  /* Display table cells as blocks */
+  .compare .c-table tbody tr th,
+  .compare .c-table tbody tr td {
+    display: block;
+    text-align: center;
+    padding: 30px 10px;
+    font-weight: bold;
+    position: relative;
+  }
+
+  /* Add a new column for table data */
+  .compare .c-table tbody tr th::before,
+  .compare .c-table tbody tr td::before {
+    content: attr(data-label); /* Show data-label attribute content */
+    position: absolute;
+    top: 0;
+    left: -100%; /* Move to the left to hide */
+    width: 100%;
+    font-weight: normal;
+  }
+
+  /* Adjust border radius for table rows */
+  .compare .c-table tbody tr:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+ /* Display the additional column for table data */
+ .compare .c-table tbody tr td[data-label]:before {
+  left: 0; /* Position the new column on the left */
+}
+
+
+
+
