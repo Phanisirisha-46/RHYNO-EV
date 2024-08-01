@@ -1,0 +1,12 @@
+.responsivediv{
+    display: none;
+  }
+  
+  @media (max-width:1000px) {
+    .example{
+      display: none;
+    }
+    .responsivediv{
+      display: block;
+    }
+  }

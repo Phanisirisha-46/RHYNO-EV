@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import rhyno_logo from '../../assets/rhyno_logo.png'; // Adjusted path
@@ -6,8 +6,6 @@ import instagramIcon from '../../assets/instagram.png'; // Adjusted path
 import LinkedinIcon from '../../assets/linkedin.png'; // Adjusted path
 
 function Header() {
- 
-
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector('.header');
@@ -36,12 +34,54 @@ function Header() {
 
   return (
     <div>
-   <div className='d-flex flex-wrap justify-content-around header'>
-      <div>
-        <div className='logo'> 
-          <img src={rhyno_logo} alt="rhyno_logo" className='logo-icon' />
+      <div className='d-flex flex-wrap justify-content-around header'>
+        <div>
+          <div className='logo'> 
+            <img src={rhyno_logo} alt="Rhyno Logo" className='logo-icon' />
+          </div>
+        </div>
+        <div>
+          <ul className='nav fs-5 p-3'>
+            <li>
+              <Link to="/" className='nav-link text-white'>Home</Link>
+            </li>
+            <li>
+              <Link to="/rentals" className='nav-link text-white'>Pre-book now</Link>
+            </li>
+            <li>
+              <select 
+                name="products" 
+                id="products" 
+                className="form-select nav-link"
+                onChange={handleDropdownChange}
+              >
+                <option value="">Products</option>
+                <option value="SE03LITE">SE03 Lite</option>
+                <option value="SE03">SE03</option>
+                <option value="SE03MAX">SE03 Max</option>
+                <option value="compare">Compare All</option>
+              </select>
+            </li>
+            <li>
+              <Link to="/contact" className='nav-link text-white'>Contact us</Link>
+            </li>
+            <li className='nav-item'>
+              <Link to="/about" className='nav-link text-white'>About Us</Link>
+            </li>
+            <li>
+              <Link to="https://www.instagram.com/rhyno.in?igsh=MXFwb2VkcnN1bWlhNw%3D%3D" className='nav-link image'>
+                <img src={instagramIcon} alt="Instagram" className='footer-icon' />
+              </Link>
+            </li>
+            <li>
+              <Link to="https://www.linkedin.com/company/rhyno-wheels/" className='nav-link image'>
+                <img src={LinkedinIcon} alt="LinkedIn" className='footer-icon' />
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
+<<<<<<< HEAD
       <div>
         <ul className='nav fs-5 p-3'>
           <li>
@@ -84,11 +124,9 @@ function Header() {
             </Link>
         </ul>
       </div>
+=======
+>>>>>>> bc4f0a1194afc00eaa0e24935cb25dd189d6ec1d
     </div>
-    </div>
- 
-
-
   );
 }
 
