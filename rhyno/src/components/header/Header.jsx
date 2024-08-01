@@ -81,7 +81,6 @@ function Header() {
           </ul>
         </div>
       </div>
-<<<<<<< HEAD
       <div>
         <ul className='nav fs-5 p-3'>
           <li>
@@ -124,8 +123,6 @@ function Header() {
             </Link>
         </ul>
       </div>
-=======
->>>>>>> bc4f0a1194afc00eaa0e24935cb25dd189d6ec1d
     </div>
   );
 }
