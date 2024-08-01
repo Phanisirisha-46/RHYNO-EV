@@ -1,0 +1,121 @@
+.di-covered{
+    max-width: 1360px;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto 6rem auto ;
+}
+
+.di-covered h1{
+    font-size: var(--heading);
+}
+
+.di-coveredin{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 4rem;
+}
+
+.di-partone{
+    width: 300px;
+}
+
+.di-partone img{
+    width: 65px;
+    height: 65px;
+    margin-bottom: 1rem;
+}
+
+.di-partone h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+.di-partone p{
+    font-size: 18px;
+    color: var(--white);
+    text-align: justify;
+}
+
+.di-coveredin1{
+    margin-top: 4rem;
+}
+
+.h1h1{
+    font-size: 55px;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 500;
+}
+@media (max-width:1000px) {
+    .h1h1{
+        width: 90%;
+
+    }
+}
+
+.di-whyus{
+    max-width: 1440px;
+    width: 100%;
+    margin: 4rem auto;
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.di-boxone{
+    max-width: 320px;
+    height: 450px;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(149.69deg,#0a7aff 0%,#56ccf2 80.18%);
+    border-radius: 1rem;
+    padding: 2rem;
+    color: #fff;
+}
+
+.di-boxone:nth-child(2){
+    background: linear-gradient(150.5deg,#5cd6a8 0%,#7ee2c2 102.12%);
+}
+
+.di-boxone:nth-child(3){
+    background: linear-gradient(149.69deg,#6144f0 0%,#856df6 100%);
+}
+
+.di-boxone:nth-child(4){
+    background: linear-gradient(150.5deg,#e65f9f 0%,#ffa97e 102.12%);
+}
+
+.di-boxone img{
+    width: 90px;
+    height: 90px;
+    margin-bottom:1rem ;
+}
+
+.di-boxone h2{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.di-boxone p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.di-boxone small{
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 10px;
+    right: auto;
+    left: auto;
+}

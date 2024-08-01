@@ -1,0 +1,30 @@
+.backtotop {
+    position: fixed;
+    /* top: 300; */
+    top:50%;
+    bottom: 50%;
+    right: 0.1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow-y: hidden;
+    height: 40px;
+    width: 40px;
+    z-index: 30;
+    /* background: var(--satan); */
+
+    /* color: #fff; */
+
+    color: var(--devil);
+    border: 1px solid var(--devil);
+    font-size: var(--small);
+    background: var(--yellow);
+
+}
+
+.backtotop:hover {
+    box-shadow: 0 1px 38px 1px #80808040;
+    background:var(--satan) ;
+    color: #fff;
+
+}
