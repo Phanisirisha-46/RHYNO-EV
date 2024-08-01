@@ -35,7 +35,7 @@ function Footer() {
             <Link to="https://www.linkedin.com/company/rhyno-wheels/" className='nav-link text-white'>Career</Link>
           </li>
           <li>
-            <Link to="" className='nav-link text-white'>Rentals</Link>
+            <Link to="rental" className='nav-link text-white'>Rentals</Link>
           </li>
           <li>
             <Link to="https://www.instagram.com/rhyno.in?igsh=MXFwb2VkcnN1bWlhNw%3D%3D" className='nav-link'>

@@ -20,7 +20,7 @@ function Header() {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup event listener on component unmount
+    // Cleanup event listener on component amount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -63,6 +63,7 @@ function Header() {
               <option value="se03-lite">SE03 Lite</option>
               <option value="se03">SE03</option>
               <option value="se03-max">SE03 Max</option>
+              
               <option value="compare-all">Compare All</option>
             </select>
           </li>

@@ -15,9 +15,9 @@ const CompareTable = () => {
               <thead>
                 <tr>
                   <th></th>
-                  <td><img src={IMG1} alt="" />SE03</td>
-                  <td><img src={IMG1} alt="" />SE03 Max</td>
-                  <td><img src={IMG1} alt="" />SE03 LITE</td>
+                  <td><img src={IMG1} alt="SE03" className="comparison-image" />SE03</td>
+                  <td><img src={IMG1} alt="SE03 Max" className="comparison-image" />SE03 Max</td>
+                  <td><img src={IMG1} alt="SE03 LITE" className="comparison-image" />SE03 LITE</td>
                 </tr>
               </thead>
             </table>

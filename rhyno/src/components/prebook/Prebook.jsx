@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Prebook.css'; // Import the CSS file
+import styles from './Prebook.module.css'; // Import the CSS Module
 import { useNavigate } from 'react-router-dom';
 
 export default function Prebook() {
@@ -13,6 +13,7 @@ export default function Prebook() {
     amount: '',
   });
   const navigate = useNavigate();
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -29,11 +30,10 @@ export default function Prebook() {
   };
 
   return (
-    <div className="prebook-container">
-     
+    <div className={styles.prebookContainer}>
       <form onSubmit={handleSubmit}>
-      <h1>Pre-book Now</h1>
-        <div className="form-group">
+        <h1>Pre-book Now</h1>
+        <div className={styles.formGroup}>
           <label htmlFor="fullName">Full Name:</label>
           <input
             type="text"
@@ -44,7 +44,7 @@ export default function Prebook() {
             required
           />
         </div>
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label htmlFor="email">Email:</label>
           <input
             type="email"
@@ -55,7 +55,7 @@ export default function Prebook() {
             required
           />
         </div>
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label htmlFor="model">Select Model:</label>
           <select
             id="model"
@@ -70,7 +70,7 @@ export default function Prebook() {
             <option value="model3">Model 3</option>
           </select>
         </div>
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label htmlFor="cardNumber">Card Number:</label>
           <input
             type="text"
@@ -81,7 +81,7 @@ export default function Prebook() {
             required
           />
         </div>
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label htmlFor="expiryDate">Expiry Date (MM/YY):</label>
           <input
             type="text"
@@ -92,7 +92,7 @@ export default function Prebook() {
             required
           />
         </div>
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label htmlFor="cvv">CVV:</label>
           <input
             type="text"
@@ -103,7 +103,7 @@ export default function Prebook() {
             required
           />
         </div>
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label htmlFor="amount">Amount:</label>
           <input
             type="text"
