@@ -3,11 +3,11 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Home.css';
-import rhyno_b from '../../assets/rhyno_bike.jpg'; 
-import rhyno from '../../assets/img2.png'; 
-import rhyno_ from '../../assets/img3.jpg'; 
-import se3 from '../../assets/se03.png'; 
-import se3max from '../../assets/se3max.png'; 
+import rhyno_b from '../../assets/rhyno_bike.jpg';
+import rhyno from '../../assets/img2.png';
+import rhyno_ from '../../assets/img3.jpg';
+import se3 from '../../assets/se03.png';
+import se3max from '../../assets/se3max.png';
 
 function Home() {
   const [word, setWord] = useState('Elegance');
@@ -15,7 +15,7 @@ function Home() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setWord(prev => {
+      setWord((prev) => {
         const currentIndex = words.indexOf(prev);
         const nextIndex = (currentIndex + 1) % words.length;
         return words[nextIndex];
@@ -28,11 +28,11 @@ function Home() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 500, // Control the speed of transition (ms)
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500, // Slide every 1.5 seconds
+    autoplaySpeed: 2000, // Delay between slides (ms)
     responsive: [
       {
         breakpoint: 1024,
@@ -48,14 +48,17 @@ function Home() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 2
+          infinite: true,
+          dots: true
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
         }
       }
     ]
@@ -82,17 +85,17 @@ function Home() {
       <br /><br />
       <div className='carousel-container'>
         <Slider {...settings}>
-          <div className="card-product rhyno">
+          <div className="card-product">
             <div className="image-container">
-              <img src={rhyno} alt="Product" className="main-image " />
+              <img src={rhyno} alt="Product" className="main-image" />
             </div>
-            <div className="title-container special">
+            <div className="title-container">
               <b className="title">Rhyno SE03 Lite</b>
             </div>
             <div className="price-container">
               <span className="warranty">Battery 1.8Kwh</span>
             </div>
-            <div className="button-container ">
+            <div className="button-container">
               <button className="checkout-button">Checkout</button>
             </div>
             <div className="link-container">
@@ -135,12 +138,6 @@ function Home() {
           </div>
         </Slider>
       </div>
-
-      
-
-
-
-
     </div>
   );
 }

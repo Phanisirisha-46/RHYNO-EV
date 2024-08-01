@@ -42,8 +42,8 @@
   }
   
   .gallery img:nth-child(1) { animation-delay: 0s; }
-  .gallery img:nth-child(2) { animation-delay: 8s; }
-  .gallery img:nth-child(3) { animation-delay: 15s; }
+  .gallery img:nth-child(2) { animation-delay: 7s; }
+  .gallery img:nth-child(3) { animation-delay: 13s; }
 
 
 .cart-container {
@@ -95,15 +95,6 @@
 }
 
 /* ProductCard.css */
-.card-product {
-  background-color: white;
-  border: 1px solid black;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-  text-align: center;
-  box-shadow: 5px 4px 8px rgb(236, 234, 116);
-}
  .rhyno{
   width: 300px;
  height: 385px;
@@ -168,10 +159,11 @@
   border-radius: 8px;
   padding: 16px;
   margin: 10px; /* Adjust this value to control the space between cards */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   box-sizing: border-box; /* Ensures padding and border are included in the width and height */
 }
+
 
 .image-container {
   margin-bottom: 16px;

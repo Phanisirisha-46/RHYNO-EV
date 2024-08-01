@@ -6,6 +6,9 @@ import Prebook from './components/prebook/Prebook'
 import Home from './components/home/Home';
 import RoutingError from './components/RoutingError';
 import Contactus from './components/contactus/Contactus';
+import SE03 from './routes/SE03';
+
+import Rental from './components/rentals/Rental'
 
 import './App.css';
 function App() {
@@ -38,6 +41,14 @@ function App() {
     {
       path:'aboutus',
       element:<Aboutus/>,
+    },
+    {
+      path:'aboutus',
+      element:<Aboutus/>,
+    },
+    {
+      path:'rent',
+      element:<Rental/>,
     },
 
   ]

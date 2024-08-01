@@ -2,11 +2,13 @@ p{
     background-color: bisque;
     color: black;
 }
-.rental{
-
-    width:200px;
-
-}
+.rental {
+    width: 100px !important;
+    height: auto !important;
+    display: block !important;
+    margin-left: 200px !important;
+  }
+  
 
 span{
     color: aliceblue;;

@@ -1,5 +1,4 @@
 import React from 'react'
-import Vehicle_Img from '../components/vehicle_img/Vehicle_Img'
 import Spec from '../components/vechicle_spec/Spec'
 import Spec2 from '../components/vechicle_spec/Spec2'
 import About from '../components/aboutus/Aboutus'

@@ -29,10 +29,10 @@ function Footer() {
             <Link to="/" className='nav-link text-white'>Products</Link>
           </li>
           <li>
-            <Link to="/about" className='nav-link text-white'>Career</Link>
+            <Link to="https://www.linkedin.com/company/rhyno-wheels/" className='nav-link text-white'>Career</Link>
           </li>
           <li>
-            <Link to="" className='nav-link text-white'>Rentals</Link>
+            <Link to="rent" className='nav-link text-white'>Rentals</Link>
           </li>
           <li>
             <a href="https://www.instagram.com/rhyno.in" className='nav-link'>

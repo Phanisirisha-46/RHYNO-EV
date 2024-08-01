@@ -7,7 +7,7 @@ function Aboutus() {
     <div>
        
       <div className="image-container">
-          <img src={rhyno_logo} alt="Product" className="main-image" />
+      <img src={rhyno_logo} alt="Product" className="main-image" />
         </div>
         <h1 >ABOUT US</h1>
      <p className='lead'><b>
