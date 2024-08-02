@@ -7,6 +7,7 @@ import ScrollToTop from '../components/scrolltotop/ScrollToTop'
 import BuyNow from '../components/buynow/BuyNow'
 import Vehicle_ImgN from '../components/vehicle_img/Vehicle_ImgN'
 import IMG1 from '../assets/rf.png'
+import './common.css';
 
 const SE03 = () => {
   return (
@@ -15,7 +16,7 @@ const SE03 = () => {
       <div className="ap-maindiv vehicleinfo">
         <div className="ap-textdiv">
           {/* <h1>About Us</h1> */}
-          <p>
+          <p className='common-p'>
           Indulge in the perfect harmony of power and range with this Rhyno. Offering an exhilarating experience with its robust 1500W motor, it ensures a thrilling ride while still delivering an impressive 150km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 1500W motor and a 2.7kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn. Check out the other details below!
  </p>
         </div>
@@ -25,7 +26,7 @@ const SE03 = () => {
       
       
       <ColorPicker/>
-      <BuyNow/>
+    
     </div>
   )
 }

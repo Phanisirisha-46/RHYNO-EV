@@ -7,10 +7,15 @@ import Home from './components/home/Home';
 import RoutingError from './components/RoutingError';
 import Contactus from './components/contactus/Contactus';
 import SE03 from './routes/SE03';
-
+import Privacy from './components/privacy_policy/Privacy';
 import Rental from './components/rentals/Rental'
-
+import Refund from './components/refund_policy/Refund';
+import WebsitePolicy from './components/websitePolicy.jsx/WebsitePolicy';
+import  SE03Lite from './routes/SE03Lite';
+import  SE03Max from './routes/SE03Max';
+import CompareTable from './components/comparetable/CompareTable'
 import './App.css';
+
 function App() {
 
   const browserRouter= createBrowserRouter([
@@ -43,12 +48,36 @@ function App() {
       element:<Aboutus/>,
     },
     {
-      path:'aboutus',
-      element:<Aboutus/>,
-    },
-    {
       path:'rent',
       element:<Rental/>,
+    },
+    {
+      path:'privacy',
+      element:<Privacy/>,
+    },
+    {
+      path:'refund',
+      element:<Refund/>,
+    },
+    {
+      path:'web',
+      element:<WebsitePolicy/>,
+    },
+    {
+      path:'se03',
+      element:<SE03/>,
+    },
+    {
+      path:'se03max',
+      element:<SE03Max/>,
+    },
+    {
+      path:'se03lite',
+      element:<SE03Lite/>,
+    },
+    {
+      path:'compare',
+      element:<CompareTable/>,
     },
 
   ]

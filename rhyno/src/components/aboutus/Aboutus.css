@@ -1,7 +1,19 @@
-.lead{
-    font-size: 18px;
-    color: rgb(104, 100, 100);  
+.about0-lead{
+    font-size: 4rem;
+    color: rgb(167, 165, 165);  
+   margin-top: 150px;
+   text-shadow: 3px 3px 4px yellow;
 }
-
+.about1-lead{
+    font-size: 22px;
+    color: rgb(167, 165, 165);  
+   margin-top: 70px;
+}
+.about2-lead{
+    font-size: 22px;
+    color: rgb(167, 165, 165);  
+    margin-top: 70px;
+   
+}
   
   

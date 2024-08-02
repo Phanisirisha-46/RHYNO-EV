@@ -1,21 +1,25 @@
 
-.card-product {
+.contact-product {
     background-color: white;
     border: 1px solid black;
     padding: 30px;
     border-radius: 10px;
-    width: 300px;
+    width: 500px;
+  
     text-align: center;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 150px;
     box-shadow: 5px 4px 8px rgb(236, 234, 116);
+
     
   }
-  
+  .contact-title{
+    font-size: 20px;;
+  }
   .image-container {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 50px;
   }
   
   .title-container {
@@ -41,7 +45,7 @@
   .contact-info {
     margin-top: 20px;
     text-align: left;
-    font-size: 14px;
+    font-size: 20px;
     color: black;
   }
   

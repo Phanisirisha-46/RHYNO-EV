@@ -1,0 +1,44 @@
+/* Container for the entire website policy content */
+.websitePolicyContainer {
+    width: 800px;
+    padding: 10rem 0 5rem; /* Adjust padding for spacing */
+    margin: 0 auto;
+    color: #fff; /* Ensures all text is white */
+  }
+  
+  /* Main div for the heading */
+  .websitePolicyMainDiv {
+    margin-bottom: 1rem; /* Adjust margin for spacing consistency */
+  }
+  
+  .websitePolicyMainDiv h1 {
+    font-size: var(--heading, 2rem); /* Fallback font size */
+    color: #fff;
+    margin-bottom: 2rem; /* Adjust margin for spacing consistency */
+  }
+  
+  /* Content section styles */
+  .websitePolicyContent {
+    margin-bottom: 2rem; /* Adjust margin for spacing consistency */
+  }
+  
+  .websitePolicyContent h3 {
+    font-size: var(--para, 1.2rem);
+    margin-bottom: 1rem; /* Reduced margin for consistency */
+    color: #fff;
+  }
+  
+  .websitePolicyContent p {
+    font-size: var(--para, 1rem);
+    margin: 0; /* Remove margin to reduce gap */
+    color: #fff;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 820px) {
+    .websitePolicyContainer {
+      width: 100%;
+      padding: 10rem 1.2rem 5rem;
+    }
+  }
+  

@@ -1,51 +1,70 @@
-.p-70 {
+.p70 {
   padding: 10rem 1.2rem;
 }
-.section-head {
+
+.sectionHead {
   margin-bottom: 2rem;
   text-align: center;
   background-color: var(--black);
   color: var(--white);
 }
+
 .container {
   height: 100%;
   margin: 5rem 0;
   background-color: var(--black);
   color: var(--white);
 }
-.section-head h2 {
+
+.sectionHead h2 {
   text-transform: capitalize;
   font-size: var(--medium);
   font-weight: bold;
   line-height: 1.4;
   margin-bottom: 1rem;
 }
-.section-head p {
+
+.sectionHead p {
   font-size: var(--para);
   font-weight: 400;
   line-height: 1.4;
   margin-bottom: 0;
 }
-.compare .c-table table {
+
+.compareTable {
   border: none;
+  border-radius: 10px; /* Add rounded corners to the table */
+  overflow: hidden; /* Ensure content stays within the rounded corners */
 }
-.compare .h-table {
+
+.hTable {
   position: sticky;
-  top: 0px;
+  top: 0;
   background-color: var(--black);
 }
-.compare .c-table thead tr th {
+
+.cTable {
+  background-color: white; /* Set table background to white */
+  border-radius: 10px; /* Add rounded corners to the table container */
+}
+
+.cTable thead tr th {
   width: 35%;
   text-align: left;
   border: none;
+  background-color: var(--black); /* Keep header cells background black */
+  color: var(--white); /* Keep header text color white */
 }
-.compare .c-table .h-table thead tr td {
+
+.cTable .hTable thead tr td {
   border-top: 1px solid var(--light-grey);
 }
-.compare .c-table thead tr td:last-child {
+
+.cTable thead tr td:last-child {
   border-right: 1px solid var(--light-grey);
 }
-.compare .c-table thead tr td {
+
+.cTable thead tr td {
   width: 16.25%;
   font-weight: bold;
   font-size: var(--para);
@@ -53,77 +72,92 @@
   border: none;
   border-left: 1px solid var(--light-grey);
 }
-.compare .c-table th,
-.compare .c-table td {
+
+.cTable th,
+.cTable td {
   padding: 25px;
   vertical-align: middle;
   text-align: center;
-  color: var(--white);
+  color: black; /* Set text color to black */
 }
-.compare .c-table td i {
+
+.cTable td i {
   font-size: var(--para);
   color: var(--yellow);
 }
-.compare .c-table tbody tr th {
+
+.cTable tbody tr th {
   text-align: left;
   border-left: none;
   font-size: var(--para);
-  color: var(--white);
+  color: black; /* Set text color to black */
   border-color: var(--light-grey);
 }
-.compare .c-table tbody tr td {
+
+.cTable tbody tr td {
   border-right: none;
   font-size: var(--para);
-  color: var (--white);
+  color: black; /* Set text color to black */
   border-color: var(--light-grey);
 }
-.compare .c-table tbody tr td:last-child {
+
+.cTable tbody tr td:last-child {
   border-right: 1px solid var(--light-grey);
 }
+
 @media only screen and (max-width: 768px) {
-  .section-head h2 {
+  .sectionHead h2 {
     font-size: 24px;
   }
-  .compare .c-table thead tr th,
-  .compare .c-table thead tr td {
+
+  .cTable thead tr th,
+  .cTable thead tr td {
     font-size: 14px;
   }
-  .compare .c-table th,
-  .compare .c-table td {
+
+  .cTable th,
+  .cTable td {
     padding: 15px;
   }
 }
+
 @media only screen and (max-width: 480px) {
-  .section-head h2 {
+  .sectionHead h2 {
     font-size: 20px;
   }
-  .compare .c-table thead tr th,
-  .compare .c-table thead tr td {
+
+  .cTable thead tr th,
+  .cTable thead tr td {
     font-size: 12px;
   }
-  .compare .c-table th,
-  .compare .c-table td {
+
+  .cTable th,
+  .cTable td {
     padding: 10px;
   }
-  .compare .c-table thead {
+
+  .cTable thead {
     display: none;
   }
-  .compare .c-table tbody tr {
+
+  .cTable tbody tr {
     display: block;
     border: 2px solid var(--light-grey);
     margin-bottom: 20px;
     position: relative;
   }
-  .compare .c-table tbody tr th,
-  .compare .c-table tbody tr td {
+
+  .cTable tbody tr th,
+  .cTable tbody tr td {
     display: block;
     text-align: center;
     padding: 30px 10px;
     font-weight: bold;
     position: relative;
   }
-  .compare .c-table tbody tr th::before,
-  .compare .c-table tbody tr td::before {
+
+  .cTable tbody tr th::before,
+  .cTable tbody tr td::before {
     content: attr(data-label);
     position: absolute;
     top: 0;
@@ -131,16 +165,18 @@
     width: 100%;
     font-weight: normal;
   }
-  .compare .c-table tbody tr:last-child {
+
+  .cTable tbody tr:last-child {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
 }
-.compare .c-table tbody tr td[data-label]:before {
+
+.cTable tbody tr td[data-label]:before {
   left: 0;
 }
 
-.comparison-image {
-  width: 100px;
+.comparisonImage {
+  width: 120px; /* Set image size to 120px */
   height: auto;
 }

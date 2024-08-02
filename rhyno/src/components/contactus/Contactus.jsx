@@ -5,7 +5,7 @@ import './Contactus.css'; // Ensure you import the CSS file
 function Contactus() {
   return (
     
-      <div className="card-product">
+      <div className="contact-product">
         <div className="image-container">
           <img src={rhyno_logo} alt="Product" className="main-image" />
         </div>
@@ -16,7 +16,7 @@ function Contactus() {
           <a href="https://rhyno.in/" className="learn-more">RHYNO WEBSITE</a>
         </div>
         <div className="contact-info">
-          <p><strong>Contact Us:</strong></p>
+          <p className='contact-title'><strong>Contact Us:</strong></p>
           <p>Mail: <a href="mailto:info@rhyno.in">info@rhyno.in</a></p>
           <p>Mobile no.: <a href="tel:+919023987528">+91-9023987528</a></p>
           <p>Location: Rhyno Wheels Private Limited, Near UG hostel gate #2, Behind PDEU, Raisan, Gandhinagar, Gujarat, India.</p>

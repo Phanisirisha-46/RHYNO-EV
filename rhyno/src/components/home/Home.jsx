@@ -96,10 +96,11 @@ function Home() {
               <span className="warranty">Battery 1.8Kwh</span>
             </div>
             <div className="button-container">
-              <button className="checkout-button">Checkout</button>
+              <a href="payment">  <button className="checkout-button">Checkout</button></a>
+            
             </div>
             <div className="link-container">
-              <a href="#" className="learn-more">Learn More</a>
+              <a href="se03lite" className="learn-more">Learn More</a>
             </div>
           </div>
           <div className="card-product">
@@ -113,10 +114,10 @@ function Home() {
               <span className="warranty">Battery 2.7Kwh</span>
             </div>
             <div className="button-container">
-              <button className="checkout-button">Checkout</button>
+            <a href="payment">  <button className="checkout-button">Checkout</button></a>
             </div>
             <div className="link-container">
-              <a href="#" className="learn-more">Learn More</a>
+              <a href="se03" className="learn-more">Learn More</a>
             </div>
           </div>
           <div className="card-product">
@@ -130,10 +131,10 @@ function Home() {
               <span className="warranty">Battery 2.7Kwh</span>
             </div>
             <div className="button-container">
-              <button className="checkout-button">Checkout</button>
+            <a href="payment">  <button className="checkout-button">Checkout</button></a>
             </div>
             <div className="link-container">
-              <a href="#" className="learn-more">Learn More</a>
+              <a href="se03max" className="learn-more">Learn More</a>
             </div>
           </div>
         </Slider>

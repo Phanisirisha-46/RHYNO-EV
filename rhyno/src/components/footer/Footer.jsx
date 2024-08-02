@@ -16,17 +16,17 @@ function Footer() {
             <Link to="/privacy" className='nav-link text-white'>Privacy policy</Link>
           </li>
           <li>
-            <Link to="/refund-policy" className='nav-link text-white'>Refund policy</Link>
+            <Link to="/refund" className='nav-link text-white'>Refund policy</Link>
           </li>
           <li>
-            <Link to="/website-policy" className='nav-link text-white'>Website policy</Link>
+            <Link to="/web" className='nav-link text-white'>Website policy</Link>
           </li>
         </ul>
       </div>
       <div>
         <ul className='nav fs-5 p-3'>
           <li>
-            <Link to="/" className='nav-link text-white'>Products</Link>
+            <Link to="se03" className='nav-link text-white'>Products</Link>
           </li>
           <li>
             <Link to="https://www.linkedin.com/company/rhyno-wheels/" className='nav-link text-white'>Career</Link>

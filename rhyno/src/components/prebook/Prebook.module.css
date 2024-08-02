@@ -10,23 +10,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 1vh;
+  padding: 10px; /* Optional: Add some padding around the container */
 }
 
 form {
   background-color: #d0cfcf;
-  padding: 40px;
+  padding: 20px; /* Reduced padding */
   border-radius: 8px;
   box-shadow: 4px 4px 10px rgb(253, 251, 251);
-  width: 450px;
+  width: 400px; /* Reduced width */
   text-align: center;
   position: relative;
-  top: 300px;
+  top: 410px;
 }
 
 h1 {
   margin-bottom: 20px;
-  font-size: 40px;
+  font-size: 10px; /* Reduced font size */
   color: rgb(18, 18, 15);
   text-shadow: 4px 5px 4px yellow;
 }
@@ -44,9 +45,9 @@ label {
 
 input,
 select {
-  width: calc(100% - 22px);
-  padding: 10px;
-  margin-top: 5px;
+  width: calc(100% - 20px); /* Adjusted width calculation */
+  padding: 1px; /* Reduced padding */
+  margin-top: 1px;
   margin-bottom: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -54,12 +55,12 @@ select {
 }
 
 button {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 500px;
   cursor: pointer;
   position: relative;
   right: 10px;

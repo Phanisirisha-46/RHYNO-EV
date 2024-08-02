@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './Prebook.module.css'; // Import the CSS Module
+import styles from './Prebook.module.css';
 import { useNavigate } from 'react-router-dom';
 
 export default function Prebook() {
@@ -65,9 +65,9 @@ export default function Prebook() {
             required
           >
             <option value="">--Select Model--</option>
-            <option value="model1">Model 1</option>
-            <option value="model2">Model 2</option>
-            <option value="model3">Model 3</option>
+            <option value="model1">SE03</option>
+            <option value="model2">SE03 LITE</option>
+            <option value="model3">SE03 MAX</option>
           </select>
         </div>
         <div className={styles.formGroup}>

@@ -15,7 +15,6 @@
   max-width: 900px;
   max-height: 900px;
   border-radius: 10px;
-  
 }
 
 #color-container {
@@ -32,21 +31,22 @@
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  /* border: 1px double var(--light-grey); */
+  /* Add white border */
+  border: 2px solid #fff; /* White border around the circles */
   background-size: cover;
   transition: all 0.2s ease;
   background-color: red;
 }
 
-.color-pick:nth-child(2){
+.color-pick:nth-child(2) {
   background-color: black;
 }
 
-.color-pick:nth-child(3){
+.color-pick:nth-child(3) {
   background-color: blue;
 }
 
-.color-pick:nth-child(4){
+.color-pick:nth-child(4) {
   background-color: yellow;
 }
 
@@ -62,18 +62,18 @@
   border: 2px solid var(--black);
 }
 
-@media (max-width:880px) {
-  #output{
+@media (max-width: 880px) {
+  #output {
     height: 100%;
   }
-  #output img{
+  #output img {
     max-width: 900px;
     max-height: 900px;
   }
 }
 
-@media (max-width:560px) {
-  #output img{
+@media (max-width: 560px) {
+  #output img {
     width: 100%;
     height: 100%;
   }

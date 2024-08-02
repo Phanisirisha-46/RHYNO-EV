@@ -1,23 +1,23 @@
 import React from 'react';
-import './CompareTable.css';
+import styles from './CompareTable.module.css'; // Import the CSS Module
 import IMG1 from '../../assets/1.png';
 
 const CompareTable = () => {
   return (
     <div>
-      <div className="compare p-70">
-        <div className="container">
-          <div className="section-head text-center">
-            <h2 className="mb-3 mx-auto">Let us show you a complete comparison of all our rides</h2>
+      <div className={`${styles.compareTable} ${styles.p70}`}>
+        <div className={styles.container}>
+          <div className={styles.sectionHead}>
+            <h3 className="mb-3 mx-auto">Let us show you a complete comparison of all our rides</h3>
           </div>
-          <div className="c-table">
-            <table className="w-100 h-table">
+          <div className={styles.cTable}>
+            <table className={`${styles.w100} ${styles.hTable}`}>
               <thead>
                 <tr>
                   <th></th>
-                  <td><img src={IMG1} alt="SE03" className="comparison-image" />SE03</td>
-                  <td><img src={IMG1} alt="SE03 Max" className="comparison-image" />SE03 Max</td>
-                  <td><img src={IMG1} alt="SE03 LITE" className="comparison-image" />SE03 LITE</td>
+                  <td><img src={IMG1} alt="SE03" className={styles.comparisonImage} />SE03</td>
+                  <td><img src={IMG1} alt="SE03 Max" className={styles.comparisonImage} />SE03 Max</td>
+                  <td><img src={IMG1} alt="SE03 LITE" className={styles.comparisonImage} />SE03 LITE</td>
                 </tr>
               </thead>
             </table>

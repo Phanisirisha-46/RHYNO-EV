@@ -1,0 +1,8 @@
+/* Ensure paragraph text color is white */
+.common-p {
+    color: var(--white); /* Change text color to white */
+    font-size: 20px; /* Set font size to 20px */
+    margin: 0; /* Optional: remove default margin if needed */
+    padding: 0; /* Optional: remove default padding if needed */
+  }
+  

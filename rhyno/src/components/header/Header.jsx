@@ -56,9 +56,9 @@ function Header() {
                 onChange={handleDropdownChange}
               >
                 <option value="">Products</option>
-                <option value="SE03LITE">SE03 Lite</option>
                 <option value="SE03">SE03</option>
-                <option value="SE03MAX">SE03 Max</option>
+                <option value="SE03LITE">SE03 Lite</option>
+                <option value="se03">SE03 Max</option>
                 <option value="compare">Compare All</option>
               </select>
             </li>
