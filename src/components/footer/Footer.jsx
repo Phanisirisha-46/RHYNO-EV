@@ -10,37 +10,37 @@ function Footer() {
       <div>
         <ul className='nav fs-5 p-3'>
           <li>
-            <Link to="/contact" className='nav-link text-white'>Contact us</Link>
+            <Link to="/RHYNO/contact" className='nav-link text-white'>Contact us</Link>
           </li>
           <li>
-            <Link to="/privacy" className='nav-link text-white'>Privacy policy</Link>
+            <Link to="/RHYNO/privacy" className='nav-link text-white'>Privacy policy</Link>
           </li>
           <li>
-            <Link to="/refund" className='nav-link text-white'>Refund policy</Link>
+            <Link to="/RHYNO/refund" className='nav-link text-white'>Refund policy</Link>
           </li>
           <li>
-            <Link to="/web" className='nav-link text-white'>Website policy</Link>
+            <Link to="/RHYNO/web" className='nav-link text-white'>Website policy</Link>
           </li>
         </ul>
       </div>
       <div>
         <ul className='nav fs-5 p-3'>
           <li>
-            <Link to="se03" className='nav-link text-white'>Products</Link>
+            <Link to="/RHYNO/se03" className='nav-link text-white'>Products</Link>
           </li>
           <li>
-            <Link to="https://www.linkedin.com/company/rhyno-wheels/" className='nav-link text-white'>Career</Link>
+            <a href="https://www.linkedin.com/company/rhyno-wheels/" className='nav-link text-white'>Career</a>
           </li>
           <li>
-            <Link to="rent" className='nav-link text-white'>Rentals</Link>
+            <Link to="/RHYNO/rent" className='nav-link text-white'>Rentals</Link>
           </li>
           <li>
-            <a href="https://www.instagram.com/rhyno.in" className='nav-link'>
+            <a href="https://www.instagram.com/rhyno.in" className='nav-link' aria-label="Instagram">
               <img src={instagramIcon} alt="Instagram" className='footer-icon' />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/rhyno-wheels/" className='nav-link'>
+            <a href="https://www.linkedin.com/company/rhyno-wheels/" className='nav-link' aria-label="LinkedIn">
               <img src={LinkedinIcon} alt="LinkedIn" className='footer-icon' />
             </a>
           </li>
