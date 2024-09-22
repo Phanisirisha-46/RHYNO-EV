@@ -29,7 +29,7 @@
     top: 0;
     left: 100%; /* Start with images off-screen to the right */
     opacity: 0;
-    animation: fadeSlide 17s infinite;
+    animation: fadeSlide 15s infinite;
     transition: opacity 1s ease-in-out; /* Smooth fade transition */
   }
   
@@ -42,8 +42,8 @@
   }
   
   .gallery img:nth-child(1) { animation-delay: 0s; }
-  .gallery img:nth-child(2) { animation-delay: 8s; }
-  .gallery img:nth-child(3) { animation-delay: 13s; }
+  .gallery img:nth-child(2) { animation-delay: 6s; }
+  .gallery img:nth-child(3) { animation-delay: 10s; }
 
 
 .cart-container {
@@ -82,7 +82,7 @@
 
 @keyframes backgroundAnimation {
   0% {
-    background-color: #898787; /* Light grey */
+    background-color: #f4eded; /* Light grey */
   }
   100% {
     background-color: #f9f9f9; /* Slightly darker grey */
