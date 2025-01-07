@@ -1,11 +1,5 @@
 {
-    "headers": [
-      {
-        "source": "/(.*)\\.js",
-        "headers": [
-          { "key": "Content-Type", "value": "text/javascript" }
-        ]
-      }
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/" }
     ]
   }
-  
