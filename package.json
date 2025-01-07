@@ -2,7 +2,7 @@
   "name": "technook",
   "version": "0.0.0",
   "homepage": "https://Phanisirisha-46/github.io/RHYNO-EV",
-  "private": true,
+  "private": false,
   "type": "module",
   "scripts": {
     "predeploy":"npm run build",
