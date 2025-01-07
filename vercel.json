@@ -1,6 +1,5 @@
 {
     "rewrites": [
-      { "source": "/RHYNO/(.*)", "destination": "/RHYNO/index.html" }
+      { "source": "/(.*)", "destination": "/" }
     ]
   }
-  
