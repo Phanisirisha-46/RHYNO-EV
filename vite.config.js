@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/RHYNO/',
   plugins: [react()],
+  base: '/RHYNO/', // Ensure Vite serves assets correctly
 });
